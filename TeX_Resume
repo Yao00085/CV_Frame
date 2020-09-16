@@ -1,0 +1,233 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{5pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Jin Yao} \\ \vspace{1pt}
+    \small +86 178-5324-3022 $|$ \href{mailto:x@x.com}{\underline{yao0217@berkeley.edu}} $|$ 
+    \href{https://linkedin.com/in/...}{\underline{linkedin.com/in/jin-yao-209677160/}} $|$
+    \href{https://github.com/...}{\underline{github.com/Yao00085}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of California - Berkeley}{June. 2020 -- Dec 2020}
+      {Visiting Student (Real Analysis, Stochastic Process, Complex Analsis)}{GPA: 3.500/4.0}
+    \resumeSubheading
+      {University of Minnesota - Twin Cities}{Aug. 2020 -- Aug 2018}
+      {Double Major in Bachelor of Arts, Economics and Statistics}{GPA: 3.923/4.0}
+  \resumeSubHeadingListEnd
+  
+  
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Senior Project} $|$ \emph{Machine Learning} }{May 2020}
+          \resumeItemListStart
+            \resumeItem{The Application of Random Forest to the Classification of the Census Income Level}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Dissertations} $|$ \emph{Economics and Statistics Majors}}{May 2020}
+          \resumeItemListStart
+            \resumeItem{Statistics Major: Research on the Correlation of the Financial Market of Europe and the US based on DCC-GARCH Model - Co-moments under the threat of COVID-19}
+            \resumeItem{Economics Major: Asian Foreign Reserves Since Asian Financial Crisis - Application to China with the Impact of Volatility in Exchange Rate}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Capstone Project} $|$ \emph{How Does Daily Running Influence Cholesterol Levels}}{Apr 2020}
+          \resumeItemListStart
+            \resumeItem{Constructed sampling method for UMN Public Health students; structured experimental design plan }
+            \resumeItem{Utilised R to build models and conducted analysis, wrote proposal data analysis report, gave a presentation to the }
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Research Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Undergraduate Research Assistant}{Apr. 2020 -- Present}
+      {Carlson School of Management at UMN}{Twin Cities, MN}
+      \resumeItemListStart
+        \resumeItem{Work with assistant professor in Finance Department on political and governmental problems including constraints on local public finances, particularly on municipalities’ borrowing and spending, and how the Budget Balance Requirement affects their cost of capital and choice of investment under the COVID 19}
+        \resumeItem{Mainly focus on the project Distortion in Municipal Public Finance, a joint project with Daniel Green at HBS}
+        \resumeItem{Work as a developer of the data management of the project via GitLab: read the paper assigned, find the data needed for each paper and understand the topic; due for completion by Spring 2021}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Undergraduate Research Assistant}{Mar. 2017 -- July 2018}
+      {Qingdao University}{Qingdao, China}
+      \resumeItemListStart
+        \resumeItem{Engaged in the study of advanced mathematics theory with PhD students, studied Dynamic Optimisation, acquired the scientific knowledge of decision making under uncertainty in Economics}
+        \resumeItem{Drafted part of the paper of the Dynamic fair Stackelberg-Nash equilibrium strategy of supply chain members and the project of Dynamic Differential Game Analysis of the Third-Party Recovery Strategy under the Extended Producer Responsibility}
+    \resumeItemListEnd
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+\section{Professional Experience}
+    \resumeSubheading
+      {Part-time Assistant}{Apr. 2020 -- Present}
+      {Accenture}{Shanghai}
+      \resumeItemListStart
+        \resumeItem{Helped co-ordinate the projects including the imported automobile market in China, risk analysis of the new car market in China along with the relevant data analysis }
+        \resumeItem{Checked the annual and financial reports of the automobile companies including Audi and BMW; researched the agency system from the aspects of the management system, financial support, profit arrangement, operating result, how companies manage different distribution channels, and how they use digital marketing to boost sales}
+        \resumeItem{Summarised the outline of the agency system of the imported automobile market; collected relevant data including historical sales, and forecast sales volumes of the new car market in different cities using time series in R }
+      \resumeItemListEnd
+      
+      
+    \resumeSubheading
+      {Part-time Assistant}{Jan. 2019 -- Mar 2019}
+      {Roland Berger}{Shanghai}
+      \resumeItemListStart
+        \resumeItem{Helped complete several projects including Aerial Work Platform (AWP) market in North America, New Energy Vehicle market of China and the prospects for China’s second-hand automobile market in the near future}
+        \resumeItem{Checked the annual and financial reports of different AWP companies, researched the market including sales, leasing, price and inventory scale in North America; compared AWP with scaffolding and found the optimal use at a given level of workload }
+        \resumeItem{Conducted the collection of sources of NEV market in China by looking through different companies’ vehicle construction processes; predicted the second-hand automobile market in China and helped derive conclusions for the future of the market
+        }
+        \resumeItemListEnd
+
+
+  \resumeSubHeadingListEnd
+
+ %
+%-----------HONOURS-----------
+\section{Honours}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textit{Graduate with high distinction} \\
+     \textit{Dean’s List of UMN for two consecutive academic years}\\
+     \textit{First Class Scholarship for two consecutive academic years}
+    }}
+ \end{itemize}
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Skills and Interests }
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: R(RStudio), {\textsc{Matlab}, \LaTeX}, Python, C/C++, {\textsc{Stata}}} \\
+     \textbf{Languages and Interests}{: English, Chinese; Basketball, Ukulele, Guitar, Running, Reading}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
